@@ -9,9 +9,6 @@ collections:
       image: 
       name: 
     Pitch name: Automation Anywhere
-  people:
-    title: People
-    output: true
   posts:
     title: Posts
     output: true
