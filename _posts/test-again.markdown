@@ -1,6 +1,5 @@
 ---
 title: test again
-date: 2019-03-19 17:51:00 Z
 Field name: 
 ---
 
