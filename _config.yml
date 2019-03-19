@@ -8,6 +8,7 @@ collections:
     Circle slide:
       image: 
       name: 
+    Pitch name: Automation Anywhere
   people:
     title: People
     output: true
