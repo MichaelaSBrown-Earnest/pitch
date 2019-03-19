@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'f37_boltonbold';
+    src: url('/assets/fonts/f37bolton-bold-webfont.eot');
+    src: url('/assets/fonts/f37bolton-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/f37bolton-bold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/f37bolton-bold-webfont.woff') format('woff'),
+         url('/assets/fonts/f37bolton-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'f37_boltonregular';
+    src: url('/assets/fonts/f37bolton-regular-webfont.eot');
+    src: url('/assets/fonts/f37bolton-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/f37bolton-regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/f37bolton-regular-webfont.woff') format('woff'),
+         url('/assets/fonts/f37bolton-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'tstar_mono_roundbold';
+    src: url('/assets/fonts/tstarmonoroundbol-webfont.eot');
+    src: url('/assets/fonts/tstarmonoroundbol-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/tstarmonoroundbol-webfont.woff2') format('woff2'),
+         url('/assets/fonts/tstarmonoroundbol-webfont.woff') format('woff'),
+         url('/assets/fonts/tstarmonoroundbol-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'tstar_mono_roundregular';
+    src: url('/assets/fonts/tstarmonoroundreg-webfont.eot');
+    src: url('/assets/fonts/tstarmonoroundreg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/tstarmonoroundreg-webfont.woff2') format('woff2'),
+         url('/assets/fonts/tstarmonoroundreg-webfont.woff') format('woff'),
+         url('/assets/fonts/tstarmonoroundreg-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face{
+    font-family:"vtg_serif";
+    src:url("/assets/fonts/5097748/0d3a3004-4a89-465d-ac2f-fdb2d1767d85.eot?#iefix");
+    src:url("/assets/fonts/5097748/0d3a3004-4a89-465d-ac2f-fdb2d1767d85.eot?#iefix") format("eot"),url("fonts/5097748/def4bca6-81ce-40c9-b010-59ae21a839d5.woff2") format("woff2"),url("fonts/5097748/a4010c75-6180-43ee-b004-fd7042bf364d.woff") format("woff"),url("fonts/5097748/3289cc5b-51dc-470e-ab27-97bd5be659d1.ttf") format("truetype");
+}
+
+@font-face{
+    font-family:"vtg_sans_rough";
+    src:url("/assets/fonts/5097826/8bd7f46d-b875-4db0-8f8e-e46efbc920d3.eot?#iefix");
+    src:url("/assets/fonts/5097826/8bd7f46d-b875-4db0-8f8e-e46efbc920d3.eot?#iefix") format("eot"),url("Fonts/5097826/551bd929-def4-47d1-9159-471fd51fb5fe.woff2") format("woff2"),url("Fonts/5097826/aca8b88c-177a-4a5c-bc98-7e525da9850b.woff") format("woff"),url("Fonts/5097826/fd07a3fd-b0c7-4cc2-b410-29824a2f9708.ttf") format("truetype");
+}
+@font-face{
+    font-family:"vtg_sans";
+    src:url("/assets/fonts/5097875/fd9b74c6-3c9c-451a-aca5-5313ed7d6d13.eot?#iefix");
+    src:url("/assets/fonts/5097875/fd9b74c6-3c9c-451a-aca5-5313ed7d6d13.eot?#iefix") format("eot"),url("Fonts/5097875/86c63ee4-36bb-48ce-9c7d-de8af208e7a0.woff2") format("woff2"),url("Fonts/5097875/af14f65d-d047-46a2-a49f-360158022487.woff") format("woff"),url("Fonts/5097875/361c7859-d353-42b3-85be-bd23e09dc105.ttf") format("truetype");
+}
+
+
+
+:root {
+    /*   font family  */
+    --body-font: "f37_boltonregular";
+    --title-font: "f37_boltonregular";
+    --heading-font: "f37_boltonbold";
+
+     /*   font size  */
+    --h1-size: 80px;
+    --h2-size: 40px;
+    --h3-size: 30px;
+    --body-size: 14px;
+}
+
+
+
+p {
+    font-family: var(--body-font),'Crimson Text', serif;
+    font-size: var(--body-size);
+}
+
+h1 {
+    font-family: var(--heading-font),'Crimson Text', serif;
+    font-size: var(--h1-size);
+}
+
+
+* {
+    font-weight: 400;
+    text-rendering: optimizeLegibility !important;
+    font-smoothing: antialiased !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+
+
+@media (--mq-medium) {
+    :root {
+        --h1-size: 40px;
+        --h2-size: 40px;
+        --h3-size: 15px;
+    }
+}
+
+
+
+
