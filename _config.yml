@@ -8,7 +8,6 @@ collections:
     Circle slide:
       image: 
       name: 
-    Examples: lalala
   people:
     title: People
     output: true
