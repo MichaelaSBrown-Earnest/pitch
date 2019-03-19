@@ -5,6 +5,9 @@ collections:
   automation-anywhere:
     title: Automation Anywhere
     output: true
+    Circle slide:
+      image: 
+      name: 
   people:
     title: People
     output: true
