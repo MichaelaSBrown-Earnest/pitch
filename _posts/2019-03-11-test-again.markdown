@@ -15,4 +15,4 @@ Field name:
 {% endfor %}
 </ul>
 
- {{ post.image }}
+ {{ image }}
