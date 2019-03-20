@@ -1,6 +1,7 @@
 ---
 title: test again
 date: 2019-03-11 16:30:00 Z
+image: "/uploads/earnest-logo.svg"
 Field name: 
 ---
 
@@ -13,3 +14,5 @@ Field name:
   </li>
 {% endfor %}
 </ul>
+
+ {{ post.image }}
