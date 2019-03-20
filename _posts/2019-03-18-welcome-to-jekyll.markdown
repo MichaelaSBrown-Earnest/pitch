@@ -30,4 +30,3 @@ Check out the [Jekyll docs](https://jekyllrb.com/docs/home) for more info on how
 
 {{ page\['prep time'\] }}
 
-\
