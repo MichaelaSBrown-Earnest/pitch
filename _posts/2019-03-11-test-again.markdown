@@ -15,4 +15,4 @@ layout: post
 {% endfor %}
 </ul>
 
-<img src="{{ post['image'] }}">
+<img src="{{post.image}}">
