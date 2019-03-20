@@ -5,7 +5,6 @@ image: "/uploads/earnest-logo.svg"
 layout: post
 ---
 
-<img src="/uploads/earnest-logo.svg">
 <ul>
 {% for member in site.data.members %}
 <li>
