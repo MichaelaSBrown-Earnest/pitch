@@ -5,7 +5,8 @@ image: "/uploads/earnest-logo.svg"
 layout: post
 ---
 
-![earnest-logo.svg](/uploads/earnest-logo.svg)<ul>
+[earnest-logo.svg](/uploads/earnest-logo.svg)
+<ul>
 {% for member in site.data.members %}
 <li>
 <a href="https://github.com/{{ member.github }}">
