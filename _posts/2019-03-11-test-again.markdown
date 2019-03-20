@@ -17,4 +17,4 @@ layout: post
 
 <img src="{{post.image}}">
 
-test
+<p>test</p>
