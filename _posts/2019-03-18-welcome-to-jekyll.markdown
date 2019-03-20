@@ -1,9 +1,11 @@
 ---
 title: Welcome to Jekyll!
-date: 2019-03-18 11:11:56 Z
+date: 2019-03-18 11:11:00 Z
 categories:
 - jekyll
 - update
+image: "/uploads/earnest-logo.svg"
+name: test again
 layout: post
 ---
 
