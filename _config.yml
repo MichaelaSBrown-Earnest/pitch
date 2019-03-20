@@ -1,12 +1,9 @@
 ---
-title: Example
+title: Earnest Agency
 timezone: UTC
 collections:
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
+  pitch:
+    client: automation anywhere
     output: true
 defaults:
 - scope:
@@ -14,6 +11,7 @@ defaults:
     type: pages
   values:
     layout: default
+    author: test
 - scope:
     path: ''
     type: posts
