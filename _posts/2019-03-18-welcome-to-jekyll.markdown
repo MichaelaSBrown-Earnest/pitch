@@ -6,6 +6,7 @@ categories:
 - update
 image: "/uploads/earnest-logo.svg"
 name: test again
+prep time: 10
 layout: post
 ---
 
@@ -26,3 +27,7 @@ print_hi('Tom')
 Check out the [Jekyll docs](https://jekyllrb.com/docs/home) for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo](https://github.com/jekyll/jekyll). If you have questions, you can ask them on [Jekyll Talk](https://talk.jekyllrb.com/).
 
 {{  post\['image'\]  }}
+
+{{ page\['prep time'\] }}
+
+\
