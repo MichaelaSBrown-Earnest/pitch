@@ -3,7 +3,14 @@ title: Earnest Agency
 timezone: UTC
 collections:
   pitch:
+    title: Pitch
+    output: true
     client: automation anywhere
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
     output: true
 defaults:
 - scope:
@@ -37,7 +44,7 @@ markdown: kramdown
 theme: minima
 plugins:
 - jekyll-feed
-permalink: pretty # /:categories/:year/:month/:day/:title/
+permalink: pretty
 exclude:
 - _dev
 - gulpfile.js
