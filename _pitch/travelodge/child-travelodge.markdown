@@ -2,7 +2,13 @@
 title: Child travelodge
 date: 2019-03-21 13:39:00 Z
 position: 0
-circle-1: one
-circle-2: two
+square-1: hello
+square-2: test
+layout: square-block
 ---
 
+{% if parent %}
+  <a href="{{parent.url}}">&larr; Back to {{parent.title}}</a>
+{% endif %}
+
+<p>hello</p>

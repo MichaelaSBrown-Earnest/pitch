@@ -5,25 +5,19 @@ collections:
   pitch:
     title: Pitch
     output: true
-    client: automation anywhere
   posts:
     title: Posts
     output: true
   uploads:
     title: Uploads
     output: true
+
 defaults:
 - scope:
     path: ''
     type: pages
   values:
     layout: default
-    author: test
-- scope:
-    path: ''
-    type: posts
-  values:
-    layout: post
 - scope:
     path: ''
     type: pitch
@@ -31,7 +25,16 @@ defaults:
     layout: circle
     circle-1: 
     circle-2: 
-    image: 
+    image:
+- scope:
+    path: ''
+    type: pitch
+  values:
+    layout: square
+    square-1: 
+    square-2: 
+    image:        
+
 email: michaela.brown@earnest-agency.com
 description: Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for Google search

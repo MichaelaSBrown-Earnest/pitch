@@ -11,19 +11,45 @@ layout: default
         </p>
     </section>
 
-{% for pitches in site.pitch limit:1 %}
 
-    <section class="pitch-slides">
+
+    <!-- <section class="pitch-slides">
     <a href="#">slide 1</a>
     <a href="#">slide 2</a>
     <a href="#">slide 3</a>
     <a href="#">slide 4</a>
     <a href="#">slide 5</a>
-    </section>
+    </section> -->
+
+    {% for pitches in site.pitch limit:1 %}
+         <a href="{{ pitches.url }}" class="button">Lets begin</a>
+    {% endfor %}
+
+    <nav>
+            <ul>
+            {% for pitches in site.pitch %}
+              <li><a href="{{pitches.url}}"{% if page.url == url %} class="selected"{% endif %}>{{pitches.title}}</a></li>
+            {% endfor %}
+            </ul>
+          </nav>
 
 
-    <a href="{{ pitches.url }}" class="button">Lets begin</a>
     <!-- <p>{{page.author}}</p> -->
 </section>
 
-{% endfor %}
+
+
+
+
+{% for item in site.pitch %}
+    <h3>{{ item.title }}</h3>
+      <ul>
+        {% for entry in item.travelodge %}
+          <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
+        {% endfor %}
+      </ul>
+
+      {% if item.subfolderitems[0] %}
+
+      {% endif %}
+  {% endfor %}
