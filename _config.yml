@@ -17,9 +17,14 @@ defaults:
     type: posts
   values:
     layout: post
-    image: 
-    name: 
-    author: 
+- scope:
+    path: ''
+    type: pitch
+  values:
+    layout: circle
+    circle-1: number one
+    circle-2: number two
+    image:
 email: michaela.brown@earnest-agency.com
 description: Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for Google search

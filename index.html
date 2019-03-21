@@ -25,3 +25,13 @@ layout: default
     <a href="#" class="button">Lets begin {{ page.client }}</a>
     <!-- <p>{{page.author}}</p> -->
 </section>
+
+
+{% for pitches in site.pitch %}
+  <h2>
+    <a href="{{ pitches.url }}">
+      {{ pitches.circle-1 }} - {{ pitches.circle-2 }}
+    </a>
+  </h2>
+  <p>{{ pitches.content | markdownify }}</p>
+{% endfor %}
