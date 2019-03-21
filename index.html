@@ -26,7 +26,7 @@ layout: default
 </section>
 
 
-{% for pitches in site.pitch %}
+{% for pitches in site.pitch limit:1 %}
   <h2>
     <a href="{{ pitches.url }}">
       {{ pitches.circle-1 }} - {{ pitches.circle-2 }}
