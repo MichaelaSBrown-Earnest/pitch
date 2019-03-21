@@ -29,8 +29,8 @@ defaults:
     type: pitch
   values:
     layout: circle
-    circle-1: number one
-    circle-2: number two
+    circle-1: 
+    circle-2: 
     image: 
 email: michaela.brown@earnest-agency.com
 description: Write an awesome description for your new site here. You can edit this

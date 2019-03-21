@@ -1,7 +1,12 @@
 
 <header>
-    <a>
+    <a href="/">
         <img src="/assets/img/earnest-logo.svg">
     </a>
-    <a href="#">Test pitch</a>
+    {% for pitches in site.pitch limit:1 %}
+        <a href="{{ pitches.url }}">{{pitches.title}}</a>
+    {% endfor %}
 </header>
+
+
+

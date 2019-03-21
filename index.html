@@ -11,6 +11,7 @@ layout: default
         </p>
     </section>
 
+{% for pitches in site.pitch limit:1 %}
 
     <section class="pitch-slides">
     <a href="#">slide 1</a>
@@ -21,16 +22,8 @@ layout: default
     </section>
 
 
-    <a href="#" class="button">Lets begin {{ page.client }}</a>
+    <a href="{{ pitches.url }}" class="button">Lets begin</a>
     <!-- <p>{{page.author}}</p> -->
 </section>
 
-
-{% for pitches in site.pitch limit:1 %}
-  <h2>
-    <a href="{{ pitches.url }}">
-      {{ pitches.circle-1 }} - {{ pitches.circle-2 }}
-    </a>
-  </h2>
-  <p>{{ pitches.content | markdownify }}</p>
 {% endfor %}
