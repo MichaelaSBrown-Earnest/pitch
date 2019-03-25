@@ -7,8 +7,8 @@ square-2: test
 layout: square-block
 ---
 
-{% if parent %}
+<!-- {% if parent %}
   <a href="{{parent.url}}">&larr; Back to {{parent.title}}</a>
-{% endif %}
+{% endif %} -->
 
 <p>hello</p>
