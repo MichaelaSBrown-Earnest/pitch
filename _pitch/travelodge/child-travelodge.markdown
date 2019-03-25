@@ -1,6 +1,6 @@
 ---
 title: Child travelodge
-date: 2019-03-21 13:39:00 Z
+date: 2019-03-21 13:39:00 +00:00
 position: 0
 square-1: hello
 square-2: test
