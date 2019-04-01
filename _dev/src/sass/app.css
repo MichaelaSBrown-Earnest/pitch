@@ -1,4 +1,4 @@
-    @custom-media --mq-medium (width <= 800px);
+    @custom-media --mq-medium (width <= 1440px & width => 787px);
 
     :root {
         --body-color: #e9e6ed;
@@ -12,8 +12,9 @@
         font-family:  var(--body-font),'Crimson Text', serif;
         font-size: 20px;
         font-weight: 400;
-        line-height: 1.5;
+        /* line-height: 1.5; */
     }
+
 
     h1 {
         font-size: 75px;
@@ -21,7 +22,8 @@
     }
    
    p {
-       font-size: 14px;
+       font-size: 20px;
+       line-height: 1.5;
     }
 
    header {
@@ -57,12 +59,29 @@
         margin: 60px 0;
     }
 
-    .home {
+    .pitch-slides a {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    .pitch-slides a:hover {
+        color: var(--orange);
+        text-decoration: none;
+    }
+
+
+
+    .home h2 {
+        text-align: center;
+    }
+
+    .center {
         position: absolute;
         top: 50%;
         left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%)
+        transform: translate(-50%, -50%);
+        width:100%;
+        max-width: 800px;
     }
 
     .home .button {
@@ -70,7 +89,151 @@
         display: block;
     }
 
-  
+    .grid {
+        grid-template-columns: auto;
+        display: grid;
+        grid-gap: 10px;
+    }
+
+
+    .pagination {
+        padding: 100px 0px;
+        /* width: 350px; */
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+        max-width: 800px;
+        width: 100%;
+        display: none;
+    }
+
+    .pagination a {
+        font-size: 14px;
+        font-family: var(--headingfont),'Crimson Text',serif;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+
+    .pagination a:visited{
+        color:#ffffff;
+    }
+
+
+    .pagination a:hover {
+        color: var(--orange);
+    }
+
+    #nextPage {
+        float: right;
+    }
+
+    #prevPage {
+        float: left;
+    }
+
+    .quote p {
+        font-family: tstar_mono_roundregular;
+    }
+
+
+:root {
+    --subheading: 40px;
+    --quote: 2vw;
+}
+
+
+    /*      PITCH    */
+
+    .pitch-title h1 {
+        font-size: 7vw;
+        /* text-align: center; */
+        font-style: italic;
+        font-family: 'Crimson Text',serif
+    }
+
+    .pitch-title {
+        text-align: center;
+    }
+
+    .pitch-title h2, .pitch-title h3 {
+        color: #ffffff;
+    }
+
+    .subheading {
+        font-size: var(--subheading);
+    }
+
+    .agenda h1 {
+        color:#ffffff;
+    }
+
+    .agenda ol {
+        font-family: 'Crimson Text',serif;
+        /* padding: 0 20px; */
+        font-size: 30px;
+    }
+
+    .agenda ol li {
+        padding: 25px 0px 25px 10px;
+        border-top: solid 1px var(--darkblue);
+    }
+
+    .agenda ol li:nth-last-child(1) {
+        padding: 25px 0px 25px 10px;
+        border-bottom: solid 1px var(--darkblue);
+    }
+
+
+    .quote p {
+        font-size: var(--quote);
+    }
+
+
+    .brief h2 {
+       font-style: italic;
+    }
+
+    .brief p {
+        font-size: 2.5vw;
+        font-family: 'Crimson Text',serif;
+    }
+
+    .brief .extended-message {
+        font-size: 1.5vw;
+        color: var(--white);
+    }
+
+
+
+    #venn svg {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .venn-diagram h1 {
+        text-align: center;
+    }
+
+    .barchart h1 {
+        font-size: 35px;
+    }
+
+    .barchart canvas {
+        max-width: 650px;
+        max-height: 650px;
+        margin: 0 auto;
+    }
+
+    .image .grid img {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .image h2 {
+        font-size: 30px;
+        text-align: center;
+    }
 
 
 

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Earnest Agency</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/assets/css/app.css">
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script> -->
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src= "/assets/js/venn.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+    </head>
+    <body class='{{page.bg-color}}'>
+        {% include header.html %}
+     <section class="center">
+         {{content}}
+     </section>
+     <section class="venn-diagram center">
+         <h1 class="{{page.color}}">{{page.title}}</h1>
+         <div id="venn"></div>
+     </section>
+     {% include pagination.html %}
+     <script src= "/assets/js/venn-script.js"></script>
+     {% include footer.html %}

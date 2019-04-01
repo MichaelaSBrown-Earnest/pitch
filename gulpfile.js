@@ -24,7 +24,7 @@ var base_path = './',
           scss: [ src +'/sass/*.?(s)css',
                   src +'/sass/**/*.?(s)css',
                   src +'/sass/**/**/*.?(s)css'],
-          jekyll: ['index.html', '_posts/*', '_layouts/*', '_includes/*' , 'assets/*', 'assets/**/*', '_pitch/*','_pitch/**/*']
+          jekyll: ['index.html', '_posts/*', '_layouts/*', '_includes/*' , 'assets/*', 'assets/**/*', 'pitch/*','pitch/**/*']
       };
 
 
@@ -59,6 +59,15 @@ var base_path = './',
         .pipe(browserSync.stream());
     });
 
+    gulp.task("js", function() {
+        return gulp.src([
+            '_dev/src/js/*.js'
+        ])
+        .pipe(rename({dirname: dist + '/js'}))
+        .pipe(gulp.dest('./'))
+        .pipe(browserSync.stream());
+    })
+
 
         // Rebuild Jekyll
     gulp.task('build-jekyll', (code) => {
@@ -79,6 +88,7 @@ var base_path = './',
         });
 
         gulp.watch(paths.scss, gulp.series('css'));
+        gulp.watch(paths.js, gulp.series('js'));
         gulp.watch(paths.jekyll, gulp.series('build-jekyll')).on("change", browserSync.reload);
       });
 
@@ -91,7 +101,7 @@ var base_path = './',
 
     
 // Start Everything with the default task
-gulp.task('default', gulp.series('css', 'build-jekyll', 'server', 'watch'));
+gulp.task('default', gulp.series('js','css', 'build-jekyll', 'server', 'watch'));
 
 
 

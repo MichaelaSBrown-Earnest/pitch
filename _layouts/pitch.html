@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Earnest Agency</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/assets/css/app.css">
+    </head>
+    <body class='{{page.bg-color}}'>
+        {% include header.html %}
+     <section>
+         {{content}}
+     </section>
+     <section class="pitch-title center">
+         <h1 class="{{page.pitch-title-color}}">{{page.pitch-title}}</h1>
+         <h2>{{page.subheading}}</h2>
+        <h3>{{page.pitch-date}}</h3>
+
+     </section>
+     {% include pagination.html %}
+     {% include footer.html %}

@@ -1,10 +1,13 @@
 ---
 title: Earnest Agency
 timezone: Europe/London
+
+collections_dir: pitch
 collections:
-  pitch:
-    title: Pitch
+  automation-anywhere:
+    title: Automation Anywhere
     output: true
+    category: pitch, Automation Anywhere
   posts:
     title: Posts
     output: true
@@ -18,15 +21,16 @@ defaults:
   values:
     layout: default
 - scope:
-    path: ''
+    path: 'pitch'
     type: pitch
   values:
-    layout: circle
+    layout: pitch
 - scope:
-    path: ''
-    type: pitch
+    path: 'pitch'
+    type: agenda
   values:
-    layout: square
+    layout: agenda
+
 email: michaela.brown@earnest-agency.com
 description: Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for Google search
@@ -45,3 +49,11 @@ exclude:
 - gulpfile.js
 - node_modules
 - package.json
+
+
+
+
+
+#### CUSTOM VAR ####
+
+

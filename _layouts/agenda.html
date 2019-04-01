@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Earnest Agency</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/assets/css/app.css">
+    </head>
+    <body class='{{page.bg-color}}'>
+        {% include header.html %}
+     <section>
+         {{content}}
+     </section>
+     <section class="agenda center">
+         <h1>Agenda</h1>
+        <ol class="{{page.color}}">
+            <li>Your brief – examined </li>
+            <li>The creative response – three territories, and activation ideas</li>
+            <li>Media and tactical planning thoughts</li>
+            <li>Return on investment and KPIs</li>
+            <li>Process: to launch, and ongoing management</li>
+            <li>Your Earnest team and relationship principles</li>
+        </ol>
+   
+     </section>
+     {% include pagination.html %}
+     {% include footer.html %}

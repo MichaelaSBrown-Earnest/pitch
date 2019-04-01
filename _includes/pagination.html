@@ -1,0 +1,8 @@
+<section class="pagination">
+        {% if page.previous.url %}
+        <a id="prevPage" href="{{page.previous.url}}" class="{{page.pitch-title-color}}">&laquo; {{page.previous.title}}</a>
+      {% endif %}
+      {% if page.next.url %}
+        <a id="nextPage" href="{{page.next.url}}" class="{{page.pitch-title-color}}">{{page.next.title}} &raquo;</a>
+      {% endif %}
+ </section>

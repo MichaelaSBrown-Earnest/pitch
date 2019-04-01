@@ -9,9 +9,12 @@
     --beige: #f0ebe6;
     --green: #cad6d1;
     --purple: #bba9af;
+    --white: #ffffff;
 }
 
-
+.white {
+    color: var(--white);
+}
 
 .pink {
     color: var(--pink);

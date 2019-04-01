@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Earnest Agency</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/assets/css/app.css">
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script> -->
+    </head>
+    <body class='{{page.bg-color}}'>
+        {% include header.html %}
+     <section class="center">
+         {{content}}
+     </section>
+     <section class="brief center">
+         <h1 class="{{page.secondary-color}}">{{page.title}}</h1>
+         <h2 class="{{page.color}}">{{page.you-said}}</h2>
+         <p class="{{page.color}}">{{page.brief}}</p>
+         <p class="extended-message">{{page.extended-message}}</p>
+     </section>
+     {% include pagination.html %}
+     {% include footer.html %}

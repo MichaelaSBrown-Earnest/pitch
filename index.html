@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<section class="home">
+<section class="home center">
     <section class="home-block">
-        <h1>Hello there.</h1>
+        <h1>Hello.</h1>
         <p class="intro-block">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
         it was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -12,26 +12,32 @@ layout: default
     </section>
 
 
-    <!-- <section class="pitch-slides">
-    <a href="#">slide 1</a>
-    <a href="#">slide 2</a>
-    <a href="#">slide 3</a>
-    <a href="#">slide 4</a>
-    <a href="#">slide 5</a>
-    </section> -->
 
-    {% for pitches in site.pitch limit:1 %}
-         <a href="{{ pitches.url }}" class="button">Lets begin</a>
+    {% assign pitches = site.collections | sort: 'date' %}
+    {% for pitch in pitches %}
+          {% assign name = pitch.label %}
+        <!-- <p>{{name}}</p> -->
+          <h2>{{ pitch.title }}</h2>
+          <section class="pitch-slides">
+        
+            {% for post in site[name] %}
+              <a href="{{ post.url }}">{{ post.title }}</a>
+              {% endfor %}
+          </section>
+
+          
     {% endfor %}
 
-        <nav>
+
+    
+
+       <!-- <nav>
             <ul>
-            {% for pitches in site.pitch limit:5 %}
+            {% for pitches in site.collections limit:5  %}
               <li><a href="{{pitches.url}}"{% if page.url == url %} class="selected"{% endif %}>{{pitches.title}}</a></li>
             {% endfor %}
             </ul>
-          </nav>
-
+          </nav>  -->
 
 
 </section>
