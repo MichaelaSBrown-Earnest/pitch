@@ -24,7 +24,7 @@ var base_path = './',
           scss: [ src +'/sass/*.?(s)css',
                   src +'/sass/**/*.?(s)css',
                   src +'/sass/**/**/*.?(s)css'],
-          jekyll: ['index.html', '_posts/*', '_layouts/*', '_includes/*' , 'assets/*', 'assets/**/*', 'pitch/*','pitch/**/*']
+          jekyll: ['index.html', '_posts/*', '_layouts/*', '_includes/*' , 'assets/*', 'assets/**/*', 'pitch/*','pitch/**/*', '_automation-anywhere/*', '_automation-anywhere/**/*' ]
       };
 
 
