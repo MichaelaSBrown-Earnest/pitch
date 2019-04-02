@@ -1,7 +1,9 @@
 ---
+title: Quote
 date: 2019-01-29 00:00:00 +00:00
+categories:
+- automation-anywhere
 layout: quote
-category: automation-anywhere
 bg-color: lightblue-bg
 color: darkblue
 secondary-color: orange

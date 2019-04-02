@@ -1,4 +1,5 @@
 ---
+title: Competition
 date: 2019-02-05 00:00:00 +00:00
 layout: image
 bg-color: pink-bg
